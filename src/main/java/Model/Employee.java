@@ -7,11 +7,13 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author Tanbir
+ * @author Tanbirul Hashan
  *
  */
+
 @Data
 @AllArgsConstructor
+
 public class Employee {
 	private int eId;
 	private String Ename;
