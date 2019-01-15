@@ -21,10 +21,12 @@ public class Department {
 		return true;
 	}
 	public List<Employee> sortedEmployee(){
-		List<Employee> list=new ArrayList<Employee>(map.values());
-		Collections.sort(list, (m1,m2)->{
-			return m1.getEname().compareTo(m2.getEname());
+		List<Employee> list= new ArrayList<Employee>(map.values());
+		Collections.sort(list,(e1,e2)->{
+			return e1.getEname().compareTo(e2.getEname());
+					
 		});
-		return null; 
+		list.forEach(emp->System.out.println(emp.getEname()));
+		return list;
 	}
 }
